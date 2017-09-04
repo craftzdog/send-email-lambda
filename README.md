@@ -64,9 +64,9 @@ And deploy the API.
 
 It accepts JSON data with 2 fields:
 
- * `title`: The message title
+ * `subject`: The message subject
  * `body`: The message body
 
 ## License
 
-MIT, Copyright 2017 by Takuya Matsuyama<hi@craftz.dog>
+MIT, Copyright 2017 by Takuya Matsuyama &lt;hi@craftz.dog&gt;

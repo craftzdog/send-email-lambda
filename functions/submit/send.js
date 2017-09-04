@@ -7,10 +7,8 @@ const ses = new AWS.SES({ apiVersion: '2010-12-01' })
 /**
  * Send an e-mail
  *
- * @param {string|array} to       The recipients
  * @param {string}       subject  The mail title in UTF-8 encoding
  * @param {string}       body     The mail body in UTF-8 encoding
- * @param {function}     callback Optional, the callback function
  * @return {Promise}     The promise, or null if callback is specified
  */
 module.exports = function sendEmail (subject, body) {
