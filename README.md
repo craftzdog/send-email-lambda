@@ -2,6 +2,7 @@
 
 Simple email sender running on Lambda.
 It sends emails via AWS SES.
+It comes in handy when you would add a contact form to your static website.
 
 ## Prerequisites
 
