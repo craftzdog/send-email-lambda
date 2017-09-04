@@ -1,10 +1,8 @@
 {
-  "name": "contact-form",
-  "description": "Contact form for my homepage",
+  "name": "send-email",
+  "description": "Simple email transmitter",
   "memory": 128,
   "timeout": 5,
-  "role": "arn:aws:iam::192690138271:role/contact-form_lambda_function",
   "environment": {},
-  "runtime": "nodejs6.10",
-  "profile": "california"
+  "runtime": "nodejs6.10"
 }

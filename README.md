@@ -31,7 +31,7 @@ At the project top directory:
 apex deploy
 ```
 
-Add following policy to use SES.sendEmail to your lambda role with policy name `contact-form_submit`:
+Add following policy to use SES.sendEmail to your lambda role with policy name `send-email_submit`:
 
 ```json
 {
@@ -51,7 +51,7 @@ Add following policy to use SES.sendEmail to your lambda role with policy name `
 }
 ```
 
-Configure Amazon API Gateway like this:
+Configure your API Gateway like this:
 
 ![API Gateway](./_images/api_gateway.png)
 
