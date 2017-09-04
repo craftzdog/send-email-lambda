@@ -69,4 +69,4 @@ It accepts JSON data with 2 fields:
 
 ## License
 
-MIT, Copyright 2017 by Takuya Matsuyama<hi@craftz.dog>
+MIT, Copyright 2017 by Takuya Matsuyama &lt;hi@craftz.dog&gt;
