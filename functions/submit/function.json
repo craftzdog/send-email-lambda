@@ -1,0 +1,8 @@
+{
+  "environment": {
+    "SES_REGION": "us-west-2",
+    "FROM_NAME": "Craftzdog Contact Form",
+    "FROM_EMAIL": "contact@craftz.dog",
+    "TO_EMAIL": "hi@craftz.dog"
+  }
+}
