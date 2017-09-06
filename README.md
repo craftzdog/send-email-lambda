@@ -102,9 +102,13 @@ Configure your API Gateway like this:
 
 And deploy the API.
 
-## API
+### Swagger definitions
 
-### POST `<YOUR_API_ENTRYPOINT>/submit`
+See [the swagger YAML file](/send-email-swagger.yaml) as an example.
+
+### API
+
+#### POST `<YOUR_API_ENTRYPOINT>/submit`
 
 It accepts JSON data with 2 fields:
 
