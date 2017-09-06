@@ -9,6 +9,31 @@ It comes in handy when you would add a contact form to your static website.
  * Apex - http://apex.run/
  * An email address verified with AWS SES
 
+## Prepare
+
+Init your project
+
+```
+git clone git@github.com:craftzdog/send-email-lambda.git
+cd send-email-lambda
+apex init
+> Project nane: send-email
+```
+
+Edit your `project.json` file based on `project.json.example` like:
+
+```json
+{
+  "name": "send-email",
+  "description": "Simple email transmitter",
+  "memory": 128,
+  "timeout": 5,
+  "environment": {},
+  "runtime": "nodejs6.10",
+  "role": "<YOUR_IAM_ROLE>"
+}
+```
+
 ## Configure
 
 Edit `functions/submit/function.json` as you like:
