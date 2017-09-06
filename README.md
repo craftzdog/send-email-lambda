@@ -49,15 +49,14 @@ Edit `functions/submit/function.json` as you like:
 }
 ```
 
-## Deploy
+ * `SES_REGION`: The AWS region for the SES
+ * `FROM_NAME`: Sender name like "Contact Form"
+ * `FROM_EMAIL`: The email address you would receive from. e.g., contact@example.com
+ * `TO_EMAIL`: Your personal email address to receive emails.
 
-At the project top directory:
+### Add a permission to send emails to the IAM role
 
-```sh
-apex deploy
-```
-
-Add following policy to use SES.sendEmail to your lambda role with policy name `send-email_submit`:
+Add following policy to your lambda's IAM role (ex. `send-email_lambda_function`) that allows the lambda function to use SES.sendEmail with policy name `send-email_submit`:
 
 ```json
 {
@@ -76,6 +75,26 @@ Add following policy to use SES.sendEmail to your lambda role with policy name `
     ]
 }
 ```
+
+## Deploy and test sending emails
+
+At the project top directory:
+
+```sh
+apex deploy
+```
+
+You can run the lambda function manually with below command:
+
+```sh
+echo -n '{ "subject": "hello", "body": "world" }' | apex invoke submit
+```
+
+And you will get an email to the configured address.
+
+## Publish on the Web
+
+### API Gateway
 
 Configure your API Gateway like this:
 
